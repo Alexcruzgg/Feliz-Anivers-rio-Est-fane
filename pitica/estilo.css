@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #16002b, #4b176d, #8e44ad);
+    color: white;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.coracao {
+    font-size: 70px;
+    animation: bater 1s infinite alternate;
+}
+
+h1 {
+    font-size: 45px;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 35px;
+    margin: 10px 0;
+}
+
+.idade {
+    display: inline-block;
+    background: #ffffff;
+    color: #7b2cbf;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 15px;
+}
+
+.apelidos {
+    font-size: 21px;
+    line-height: 1.8;
+    margin: 20px 0;
+}
+
+.mensagem {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 25px;
+    margin-top: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.mensagem h3,
+.galeria h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.mensagem p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 15px 0;
+}
+
+.final {
+    font-weight: bold;
+    font-size: 21px !important;
+}
+
+.galeria {
+    margin-top: 40px;
+}
+
+.fotos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.fotos img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 3px solid rgba(255,255,255,0.5);
+    transition: 0.3s;
+}
+
+.fotos img:hover {
+    transform: scale(1.04);
+}
+
+button {
+    margin-top: 40px;
+    padding: 16px 30px;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    color: #7b2cbf;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.08);
+}
+
+.surpresa {
+    display: none;
+    margin-top: 25px;
+    padding: 25px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 20px;
+}
+
+.surpresa p {
+    font-size: 19px;
+    line-height: 1.6;
+    margin: 10px;
+}
+
+footer {
+    margin-top: 50px;
+    opacity: 0.8;
+}
+
+@keyframes bater {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .fotos {
+        grid-template-columns: 1fr;
+    }
+
+    .fotos img {
+        height: 280px;
+    }
+
+    .mensagem {
+        padding: 20px;
+    }
+
+    .videu h3 {
+         font-size: 28px;
+    margin-bottom: 20px;
+
+    }
+
+    .videu {
+        margin-top: 40px;
+    }
+
+}
